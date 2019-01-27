@@ -1,0 +1,18 @@
+{
+  "id": 1233444,
+  "category": {
+    "id": 1233444,
+    "name": "string"
+  },
+  "name": "butch",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1233444,
+      "name": "doggie"
+    }
+  ],
+  "status": "sleeping"
+}
