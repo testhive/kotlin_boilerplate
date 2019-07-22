@@ -1,7 +1,7 @@
 package JourneyTests
 
-import extensions.retry.TestWithRetry
 import extensions.webdriver.WebDriverSuite
+import org.junit.jupiter.api.Test
 import org.openqa.selenium.WebDriver
 import pageObjects.FormEntryPage
 
@@ -9,7 +9,7 @@ import pageObjects.FormEntryPage
 class FormUiJourney(private val driver: WebDriver){
     private lateinit var formEntryPage: FormEntryPage
 
-    @TestWithRetry
+    @Test
     fun leaveLeftFormEmptyAndGetAnError(){
         formEntryPage = FormEntryPage(driver)
         formEntryPage.goToPage()
@@ -18,7 +18,7 @@ class FormUiJourney(private val driver: WebDriver){
         assert(formEntryPage.fieldsEmptyErrorMessageIsVisible())
     }
 
-    @TestWithRetry
+    @Test
     fun fillFormAndSubmit(){
         formEntryPage = FormEntryPage(driver)
         formEntryPage.goToPage()

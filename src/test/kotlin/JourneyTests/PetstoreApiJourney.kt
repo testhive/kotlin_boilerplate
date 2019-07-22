@@ -1,12 +1,12 @@
 package JourneyTests
 
 import apiObjects.PetStoreAPI
-import extensions.retry.TestWithRetry
+import org.junit.jupiter.api.Test
 
 class PetstoreApiJourney {
     private lateinit var petStoreAPI: PetStoreAPI
 
-    @TestWithRetry
+    @Test
     fun createPetAndUpdate(){
         petStoreAPI = PetStoreAPI()
         val petId = petStoreAPI.createPetFromFile("petData")
